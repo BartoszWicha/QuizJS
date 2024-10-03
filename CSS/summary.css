@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+
+body {
+    background-color: #222629;
+    color: white;
+    font-family:'Bebas Neue';
+    padding: 0;
+    margin:0;
+}
+
+.container{
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #474B4f;
+}
+
+.question{
+    margin-left: 5vw;
+    text-align: left;
+    border-image: linear-gradient(to right, #86C232, #222629 80%) 1;
+    border-bottom: 2px solid;
+}
+
+.answerCont{
+    display:flex;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 90%;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.answerChoice{
+    font-size: 15px;
+    width:30%;
+    padding: 10px;
+    border: 2px solid #474B4f;
+    text-align: left;
+    border-radius: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#correctAnswers, #wrongAnswers, #unAnswered{
+    text-align:center;
+    width: 65%;
+    margin-left:17.5%;
+    margin-top: 75px;
+    margin-bottom:75px;
+    z-index: 1;
+    letter-spacing: 1px;
+}
+
+#header{
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+    padding-top: 5vh;
+    font-size: 70px;
+}
+
+

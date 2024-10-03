@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 2px;
+    background-color:#222629;
+}
+
+/* Progress Bar CSS */
+#progressBar {
+    display:flex;
+    background-color:#222629;
+    margin-top: 50px;
+    border-top:2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #86C232, #222629 80%) 1; /**/
+    /*W3Schools, 'CSS3 border-image Property', W3Schools, 
+    Available at: https://www.w3schools.com/cssref/css3_pr_border-image.php (Accessed: 7 December 2023).*/
+}
+
+.progressItem{
+    width:20%;
+    height: 15px;
+    background: linear-gradient(to right, #86C232 50%, #222629 50%);
+    background-size: 200% 100%;
+    background-position: bottom right;
+    transition: all 1s; /**/  
+    /*Stack Overflow, 'Fill background color left to right CSS', Stack Overflow, 
+    Available at: https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css (Accessed: 7 December 2023).*/
+}
+
+
+/* Form CSS */
+#Header{
+    font-size: 50px;
+    margin-left: 5%;
+    border-bottom: 2px solid #86C232;
+    max-width: 90%;
+    color: white;
+    font-family: 'Bebas Neue';
+}
+
+form input[type=button]{
+    font-size: 30px;
+    width:30%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 13%;
+    margin-bottom: 50px;
+    text-align:left;
+    border: 2px solid #474B4f;
+    color: white;
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+}
+
+form input[type = button]:hover{
+    cursor: pointer;
+    background-color: #474B4f;
+}
+
+#choicesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 70%;
+    margin-top:200px;
+}
+
+#hint{
+    border:none;
+    background-color: #222629;
+    color: white;
+    font-family: 'Bebas Neue';
+    visibility: hidden;
+    resize:none;
+    font-size:20px;
+    position:absolute;
+    right: 5%;
+    text-align: center;
+}
+
+#hintText{
+    float:right;
+    color:#86C232;
+}
+
+
+/* footer */
+#footer{
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+}
+
+#currQuestionCont{
+    display: flex;
+    position: absolute;
+    left: 40%;
+    bottom: 4%;
+    min-width: 20%;
+    justify-content: space-between;
+}
+
+#currQuestionCont p{
+    width:100%;
+    text-align:center;
+    border-bottom: 2px solid #474B4f;
+    padding-bottom: 5px;
+    color: white;
+    font-family: 'Bebas Neue';
+}
+
+#currQuestionCont p:nth-child(1){
+    border-bottom: 2px solid #86C232;
+    color: white;
+}
+
+#back, #next{
+    width: 8%;
+    background: #86C232;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 18px;
+    border: 0;
+    position: absolute;
+    bottom: 30%;
+    border-radius:5px;
+    color: black;
+    font-family: 'Bebas Neue';
+    letter-spacing:2px;
+}
+
+#back{
+    left:31%;
+    visibility: hidden;
+}
+
+#next{
+    right:31%;
+}
+
+#back:hover, #next:hover{
+    cursor: pointer;
+    background-color: #a4e943;
+}
